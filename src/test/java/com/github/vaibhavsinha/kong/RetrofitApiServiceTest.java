@@ -52,9 +52,9 @@ public class RetrofitApiServiceTest extends BaseTest {
 
     @Test
     public void test02_GetApi() throws IOException {
-        Api response = kongClient.getApiService().getApi(API_NAME_V2);
+        Api response = kongClient.getApiService().getApi(API_ID_V2);
         printJson(response);
-        Assert.assertEquals(API_NAME_V2, response.getName());
+        Assert.assertEquals(API_ID_V2, response.getId());
     }
 
     @Test(expected = KongClientException.class)

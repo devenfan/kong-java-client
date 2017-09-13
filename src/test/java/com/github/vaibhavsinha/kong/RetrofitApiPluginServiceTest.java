@@ -100,7 +100,7 @@ public class RetrofitApiPluginServiceTest extends BaseTest {
             plugins.addAll(pluginList.getData());
         }
         printJson(plugins);
-        Assert.assertNotEquals(plugins.size(), 0);
+        Assert.assertEquals(plugins.size(), 0);
     }
 
 
